@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI-powered GitHub prospecting agent built with n8n, Claude and Tavily - a project by Muhammad Usman Abbasi.">
+  <title>AI-Powered GitHub Prospecting Agent | Muhammad Usman Abbasi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="backlink" href="index.html">← Muhammad Usman Abbasi</a>
+      <div class="navlinks">
+        <a href="index.html#experience">Experience</a><a href="index.html#ai">AI Projects</a><a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero single">
+      <div>
+        <div class="eyebrow">AI Project · GTM Automation</div>
+        <h1 style="font-size:clamp(38px,6vw,64px)">AI-Powered GitHub Prospecting Agent</h1>
+        <p>A proof-of-concept agentic AI tool that automatically identifies companies using an open-source library who've reported an issue on GitHub, researches them on the web, scores them as sales prospects, and recommends a next action - all without manual input.</p>
+        <div class="pillbox">
+          <span class="pill">n8n</span>
+          <span class="pill">Claude (Anthropic)</span>
+          <span class="pill">GitHub API</span>
+          <span class="pill">Tavily Search</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="how-it-works">
+      <div class="section-head"><h2>How it works</h2><span>Agent orchestration flow</span></div>
+      <div class="card">
+        <img class="shot" src="assets/ai-github-prospecting/workflow-diagram.png" alt="n8n workflow diagram: a chat trigger feeds an AI Agent node, which is connected to an Anthropic chat model, memory, and three tools - Tavily search, GitHub issue lookup, and an HTTP request for GitHub user profiles">
+        <p class="caption">The n8n workflow - a Claude-powered agent orchestrating three tools on its own.</p>
+      </div>
+
+      <div class="grid-3" style="margin-top:18px">
+        <article class="card">
+          <div class="stepno">1</div>
+          <h3>Search GitHub issues</h3>
+          <p>The agent searches the product's public GitHub repository for the most recent bug reports and issues, filed by real developers actively using it - high-intent signals for prospecting.</p>
+        </article>
+        <article class="card">
+          <div class="stepno">2</div>
+          <h3>Look up the reporter</h3>
+          <p>For each issue author, the agent fetches their GitHub profile via an HTTP request to identify which company they work for.</p>
+        </article>
+        <article class="card">
+          <div class="stepno">3</div>
+          <h3>Research with Tavily</h3>
+          <p>Once a company is identified, the agent searches the web to understand what it does, its approximate size, and whether it builds data-heavy or dashboard products - the profile most likely to need the paid features.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="output">
+      <div class="section-head"><h2>What it outputs</h2><span>Per run, per prospect</span></div>
+      <div class="card">
+        <p>For each run, the agent produces a scored prospect card:</p>
+        <div class="pillbox">
+          <span class="pill">Company name</span>
+          <span class="pill">Prospect score - High / Medium / Low</span>
+          <span class="pill">Reasoning for the score</span>
+          <span class="pill">Recommended action</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="examples">
+      <div class="section-head"><h2>Agent runs</h2><span>Two examples, unedited</span></div>
+      <div class="grid">
+        <article class="card project">
+          <h3>Example 1 - no usable lead</h3>
+          <img class="shot" src="assets/ai-github-prospecting/agent-example-1.png" alt="n8n execution trace showing the agent successfully running the chat trigger, AI agent, GitHub issue lookup and Anthropic chat model nodes">
+          <p><strong>What the agent did:</strong> Checked the repository, found the two most recent bug reports, and looked up the GitHub profiles of both users who filed them - all triggered by typing "start".</p>
+          <div class="output">
+            No company information found for the top 2 recent issues in the repository:<br>
+            Issue #13779 (andrewwilliams2025): No company field<br>
+            Issue #13773 (benjaminsherry): No company field<br>
+            No qualified prospects to report at this time.
+          </div>
+          <p><strong>What it found:</strong> Neither user had a company listed on their GitHub profile, so no prospect card was generated. This is a known data-quality challenge - the agent often has to scan multiple issues before finding a usable lead.</p>
+        </article>
+
+        <article class="card project">
+          <h3>Example 2 - high-scoring prospect</h3>
+          <img class="shot" src="assets/ai-github-prospecting/agent-example-2.png" alt="n8n execution trace showing every node completing successfully, including the GitHub and Tavily tool calls">
+          <p><strong>What the agent did:</strong> Fetched another GitHub issue, identified the user who filed it, looked up their GitHub profile to find their company, then researched that company on the web.</p>
+          <div class="output">
+            COMPANY: Tanium<br>
+            PROSPECT SCORE: <strong>High</strong><br>
+            REASONING: Large-scale enterprise cybersecurity and endpoint management platform managing real-time visibility across millions of IT assets - likely requiring data-intensive dashboards.<br>
+            RECOMMENDED ACTION: Route to sales
+          </div>
+          <p><strong>What it found:</strong> The user works at Tanium - a large enterprise cybersecurity and endpoint management company based in the US with $500M+ revenue.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section-head"><h2>Let's connect</h2><span>Based in the UK</span></div>
+      <div class="contact">
+        <div><strong>Email</strong><br><a href="mailto:hello@usmanabbasi.com">hello@usmanabbasi.com</a></div>
+        <div><strong>More projects</strong><br><a href="index.html#ai">← Back to all projects</a></div>
+      </div>
+      <p style="margin-top:38px;font-size:13px">© 2026 Muhammad Usman Abbasi</p>
+    </footer>
+  </div>
+</body>
+</html>
