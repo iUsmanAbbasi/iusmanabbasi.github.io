@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="96" viewBox="0 0 240 96" role="img" aria-label="Jira logo">
+  <rect width="240" height="96" rx="18" fill="#FFF"/>
+  <g transform="translate(24 18)">
+    <path d="M36 8c-8.8 0-16 7.2-16 16v22.4C20 55.2 27.2 62.4 36 62.4h18.4c8.8 0 16-7.2 16-16V24c0-8.8-7.2-16-16-16H36Zm58.5 0c-8.8 0-16 7.2-16 16v22.4c0 8.8 7.2 16 16 16H113c8.8 0 16-7.2 16-16V24c0-8.8-7.2-16-16-16H94.5Zm-51.5 24h39v10h-39z" fill="#2684FF"/>
+    <path d="M70 20c0-10 8.1-18.1 18.1-18.1H104v18.1H70Z" fill="#0052CC" opacity=".75"/>
+    <path d="M69 48c0-10 8.1-18.1 18.1-18.1H104v18.1H69Z" fill="#0052CC" opacity=".6"/>
+  </g>
+</svg>

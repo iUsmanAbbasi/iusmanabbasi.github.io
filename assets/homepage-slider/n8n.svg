@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="96" viewBox="0 0 240 96" role="img" aria-label="n8n logo">
+  <rect width="240" height="96" rx="18" fill="#FFF"/>
+  <g transform="translate(20 18)">
+    <path d="M28 18h18v40H28zM58 18h18v26H58zM58 52h18v6H58zM88 18h18v18H88zM88 46h18v12H88zM118 18h18v30h-18zM118 58h18v8h-18z" fill="#EA4B71"/>
+    <path d="M148 18h18v12h-18zm0 20h18v38h-18zm28-20h18v24h-18zm0 32h18v10h-18z" fill="#F4AAB6"/>
+  </g>
+</svg>

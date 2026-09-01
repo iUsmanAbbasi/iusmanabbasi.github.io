@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="96" viewBox="0 0 240 96" role="img" aria-label="Zapier logo">
+  <rect width="240" height="96" rx="18" fill="#FFF"/>
+  <g transform="translate(24 18)">
+    <rect x="0" y="30" width="28" height="22" rx="8" fill="#FF4F00"/>
+    <rect x="36" y="18" width="28" height="34" rx="8" fill="#FF4F00"/>
+    <rect x="72" y="8" width="28" height="44" rx="8" fill="#FF4F00"/>
+    <rect x="108" y="0" width="28" height="52" rx="8" fill="#FF4F00"/>
+    <rect x="144" y="12" width="28" height="40" rx="8" fill="#FF4F00"/>
+  </g>
+</svg>

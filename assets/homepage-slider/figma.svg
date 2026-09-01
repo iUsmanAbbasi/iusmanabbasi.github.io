@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="96" viewBox="0 0 240 96" role="img" aria-label="Figma logo">
+  <rect width="240" height="96" rx="18" fill="#FFF"/>
+  <g transform="translate(24 16)">
+    <circle cx="38" cy="18" r="12" fill="#F24E1E"/>
+    <circle cx="59" cy="36" r="12" fill="#FF7262"/>
+    <circle cx="38" cy="54" r="12" fill="#A259FF"/>
+    <path d="M82 18v20a12 12 0 0 1-12 12 12 12 0 0 1-12-12V18h24Z" fill="#1ABCFE"/>
+    <path d="M82 18a12 12 0 1 1 24 0 12 12 0 0 1-24 0Z" fill="#0ACF83"/>
+    <path d="M82 48a12 12 0 1 1 24 0 12 12 0 0 1-24 0Z" fill="#FFCC00"/>
+  </g>
+</svg>

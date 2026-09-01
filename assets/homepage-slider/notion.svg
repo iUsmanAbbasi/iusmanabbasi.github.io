@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="96" viewBox="0 0 240 96" role="img" aria-label="Notion logo">
+  <rect width="240" height="96" rx="18" fill="#FFF"/>
+  <g transform="translate(24 18)">
+    <path d="M20 10h38l18 9v46l-17 8H20L6 61V20c0-5.5 4.5-10 14-10Zm19 18v38h-8V28h8Zm15 0v38h-8V28h8Zm20 0-10 4v30l10-4V28Zm25-12h-38v10h12v38h-12v10h38v-10h-12V26h12V16Z" fill="#000"/>
+  </g>
+</svg>
