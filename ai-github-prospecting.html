@@ -33,7 +33,7 @@
     <section id="how-it-works">
       <div class="section-head"><h2>How it works</h2><span>Agent orchestration flow</span></div>
       <div class="card">
-        <img class="shot" src="assets/ai-agent/workflow-diagram.png" alt="n8n workflow diagram: a chat trigger feeds an AI Agent node, which is connected to an Anthropic chat model, memory, and three tools - Tavily search, GitHub issue lookup, and an HTTP request for GitHub user profiles">
+        <img class="shot" src="assets/ai-github-prospecting/workflow-diagram.png" alt="n8n workflow diagram: a chat trigger feeds an AI Agent node, which is connected to an Anthropic chat model, memory, and three tools - Tavily search, GitHub issue lookup, and an HTTP request for GitHub user profiles">
         <p class="caption">The n8n workflow - a Claude-powered agent orchestrating three tools on its own.</p>
       </div>
 
@@ -74,7 +74,7 @@
       <div class="stack">
         <article class="card project">
           <h3>Example 1 - no usable lead</h3>
-          <img class="shot" src="assets/ai-agent/agent-example-1.png" alt="n8n execution trace showing the agent successfully running the chat trigger, AI agent, GitHub issue lookup and Anthropic chat model nodes">
+          <img class="shot" src="assets/ai-github-prospecting/agent-example-1.png" alt="n8n execution trace showing the agent successfully running the chat trigger, AI agent, GitHub issue lookup and Anthropic chat model nodes">
           <p><strong>What the agent did:</strong> Checked the repository, found the two most recent bug reports, and looked up the GitHub profiles of both users who filed them - all triggered by typing "start".</p>
           <div class="output">
             No company information found for the top 2 recent issues in the repository:<br>
@@ -87,7 +87,7 @@
 
         <article class="card project">
           <h3>Example 2 - high-scoring prospect</h3>
-          <img class="shot" src="assets/ai-agent/agent-example-2.png" alt="n8n execution trace showing every node completing successfully, including the GitHub and Tavily tool calls">
+          <img class="shot" src="assets/ai-github-prospecting/agent-example-2.png" alt="n8n execution trace showing every node completing successfully, including the GitHub and Tavily tool calls">
           <p><strong>What the agent did:</strong> Fetched another GitHub issue, identified the user who filed it, looked up their GitHub profile to find their company, then researched that company on the web.</p>
           <div class="output">
             COMPANY: Tan-----<br>
