@@ -22,6 +22,8 @@ section{padding:28px 0 68px}.section-head{display:flex;justify-content:space-bet
 h2{font-size:30px;letter-spacing:-.035em;margin:0}.section-head span{color:var(--muted);font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.stack{display:grid;grid-template-columns:1fr;gap:22px}
+.grid>*,.grid-3>*,.stack>*{min-width:0}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
 .role{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.role h3{margin:0;font-size:20px}.company{font-weight:750;color:var(--accent2);margin-top:4px}.date{color:var(--muted);white-space:nowrap;font-size:14px}
 ul{padding-left:20px;margin:16px 0 0}li{margin:8px 0}
@@ -38,8 +40,8 @@ footer{padding:44px 0 60px;border-top:1px solid var(--line);color:var(--muted)}
 .shot{width:100%;display:block;border-radius:14px;border:1px solid var(--line);background:#0e1420}
 .shot + p.caption{color:var(--muted);font-size:13px;margin:10px 2px 0}
 .stepno{width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin-bottom:14px}
-.output{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14px;margin:14px 0}
-.output strong{color:var(--ink)}
+.output{background:#eef2ff;border:1px solid #c7d2fe;border-radius:12px;padding:16px 18px;font-size:14px;line-height:1.7;margin:14px 0;color:#243c9a}
+.output strong{color:var(--accent2)}
 .card p{margin:10px 0}
 .card p:first-of-type{margin-top:0}
 .backlink{text-decoration:none;font-weight:800;color:var(--ink);letter-spacing:-.02em}
